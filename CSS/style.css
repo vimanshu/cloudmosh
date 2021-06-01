@@ -112,3 +112,25 @@ a {
     font-size: 1.5;
   }
 }
+
+/* ICONS */
+
+.icon {
+  /* structuring icon */
+  width: 40px;
+  height: 40px;
+}
+/* now give skins to it */
+
+.icon-primary {
+  fill: var(--color--primary);
+}
+.icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-color: rgba(252, 231, 192, 0.6);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
