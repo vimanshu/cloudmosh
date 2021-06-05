@@ -16,6 +16,7 @@ html {
   --color--body: #918ca4;
   --color--headings: #1b0760;
   --color--border: #ccc;
+  --body--darker: #5c5577;
 }
 
 body {
@@ -372,4 +373,45 @@ a {
 }
 .media__image {
   margin-top: 1rem;
+}
+
+/* --------QUOTE----------- */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--body--darker);
+  line-height: 1.3;
+}
+
+.quote__text::before,
+.quote__text::after {
+  content: '"';
+}
+
+.media__name {
+  font-style: normal;
+  font-weight: normal;
+  color: var(--color--headings);
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+.media__company {
+  font-size: 1.5rem;
+  font-style: normal;
+  opacity: 40%;
+  color: var(--color--headings);
+}
+.quote__icon {
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__name {
+    font-size: 2.4rem;
+  }
+  .media__company {
+    font-size: 1.6rem;
+  }
 }
