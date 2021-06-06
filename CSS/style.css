@@ -31,7 +31,9 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--color--headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -558,5 +560,45 @@ a {
   }
   .nav__item {
     border: 0;
+  }
+}
+
+/* --------HERO COMPONENT------------ */
+.block--dark {
+  background: #000;
+}
+
+.block--skewed-left {
+  clip-path: polygon(0 0, 100% 1%, 100% 88%, 17% 100%, 0 100%, 0% 50%);
+}
+.hero__content {
+  align-self: center;
+  justify-self: center;
+}
+.hero__content h1 {
+  color: white;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__content h1,
+  p {
+    text-align: center;
+  }
+  .hero__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    padding: 1.9rem;
   }
 }
