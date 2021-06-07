@@ -498,6 +498,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 .collapsible__heading {
   margin-top: 0;
@@ -764,4 +765,72 @@ header {
 .testimonial__quote .media {
   display: flex;
   justify-content: center;
+}
+
+/* --------------Footer Area-------------- */
+@media screen and (min-width: 768px) {
+  .footer--area {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgb(46, 44, 44);
+    padding-bottom: 5rem;
+  }
+  .footer__credits {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1.6rem;
+  }
+  .footer__col .list__item-head {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .footer__col .list__item {
+    color: #fff;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  .footer__col .list__item:hover {
+    opacity: 1;
+  }
+  .Footer__mobile {
+    display: none;
+  }
+}
+/* -----------Footer for mobile view----------------------- */
+@media screen and (max-width: 768px) {
+  .footer--area {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    background: rgb(46, 44, 44); */
+    display: none;
+  }
+  .Footer__mobile {
+    background: rgb(46, 44, 44);
+    padding-bottom: 5rem;
+  }
+  .Footer__mobile__collapsible {
+    border-bottom: 1.5px solid #ccc;
+    margin: 2rem;
+  }
+  .collapsible__heading {
+    color: white;
+  }
+  .collapsible__chevron {
+    fill: white;
+  }
+  .list__item,
+  .list__item-head {
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0.15s;
+  }
+  .list__item:hover,
+  .list__item-head:hover {
+    opacity: 1;
+  }
+  .Footer__mobile__logo {
+    width: 100%;
+    max-width: 230px;
+  }
 }
