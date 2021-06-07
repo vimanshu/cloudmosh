@@ -706,3 +706,39 @@ p {
     transform: scale(0.9);
   }
 }
+
+/* --------Feature component-------- */
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem 2rem;
+  /* gap: rows columns */
+  margin-bottom: 12rem;
+}
+
+.feature__info {
+  margin-left: 1rem;
+}
+.feature__heading,
+.feature__content {
+  text-align: left;
+}
+
+.feature__image {
+  width: 100%;
+}
+header {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.header p {
+  font-size: 2rem;
+}
+/* way to change the order of the grids without manually changing it */
+/* this is the trick */
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__info {
+    order: 2;
+  }
+}
