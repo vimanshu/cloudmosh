@@ -312,6 +312,8 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  margin-bottom: 6rem;
+  transition: scale 0.3s;
 }
 
 .card__header,
@@ -325,6 +327,9 @@ a {
 .card--secondary .card__header {
   background: var(--color--secondary);
   color: #fff;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 /* PLANS */
@@ -644,5 +649,60 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+
+/* ------------cards section----------- */
+
+.card {
+  transition: transform 0.2s ease-out;
+}
+.card-section {
+  margin: 2rem 8rem;
+}
+
+.card-section__header {
+  text-align: left;
+}
+.card-section__price-plan {
+  display: flex;
+}
+
+.card-section__cycle,
+.card-section__badge {
+  margin-top: 1.9rem;
+}
+
+#plan-type,
+#plan-tagline {
+  text-align: left;
+}
+#price {
+  font-size: 5rem;
+  margin-right: 1rem;
+}
+.card__body__plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.plan__button {
+  margin-bottom: 2rem;
+  margin-left: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0rem 1rem;
+    padding: 2rem 2rem;
+  }
+  .card--secondary {
+    transform: scale(0.8);
+  }
+  .card--secondary:hover {
+    transform: scale(0.9);
   }
 }
