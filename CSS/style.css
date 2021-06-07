@@ -742,3 +742,26 @@ header {
     order: 2;
   }
 }
+
+/* -----------Testimonial Conatainer------------- */
+.testimonial__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 3rem 5rem;
+}
+
+.testimonial__container:hover {
+  transform: none;
+}
+.testimonial__card__image {
+  width: 100%;
+}
+
+.testimonial__quote {
+  align-self: center;
+  justify-self: center;
+}
+.testimonial__quote .media {
+  display: flex;
+  justify-content: center;
+}
