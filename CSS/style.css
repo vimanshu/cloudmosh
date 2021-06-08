@@ -432,7 +432,10 @@ a {
   position: relative;
   bottom: 10px;
 }
-
+.media__body h3,
+p {
+  color: #000;
+}
 @media screen and (min-width: 1024px) {
   .media__name {
     font-size: 2.4rem;
@@ -465,6 +468,7 @@ a {
   display: grid;
   justify-content: center;
   align-items: center;
+  margin: 0 4rem;
 }
 .callout__heading,
 .callout__text {
@@ -692,6 +696,9 @@ p {
   margin-bottom: 2rem;
   margin-left: 20%;
 }
+.list__item__card {
+  color: rgb(122, 201, 250);
+}
 
 @media screen and (min-width: 768px) {
   .card-section {
@@ -832,5 +839,52 @@ header {
   .Footer__mobile__logo {
     width: 100%;
     max-width: 230px;
+  }
+}
+
+/* ---------control Panel Section------------- */
+.control__panel__container {
+  background: #000;
+  padding-top: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 100% 100%, 0 96%);
+}
+.control__panel__container h2 {
+  color: white;
+  text-align: center;
+}
+.control__panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #000;
+}
+.control__panel__image {
+  align-self: center;
+  max-width: 80vw;
+  justify-self: center;
+}
+.media {
+  margin-bottom: 3rem;
+}
+.media__title {
+  color: white;
+  text-align: center;
+}
+.media__body p {
+  color: #ccc;
+  font-size: 1.6rem;
+}
+.icon {
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
+  .control__panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #000;
+    padding: 4rem 3rem;
+  }
+  .control__panel__image {
+    width: 50vw;
   }
 }
